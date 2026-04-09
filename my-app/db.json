@@ -1,6 +1,113 @@
 {
   "user": [
-    
+    {
+      "username": "Ivan",
+      "password": "1234",
+      "id": "53uSJjX_Jmk"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "price": 1199.99,
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg",
+      "reviews": {
+        "rating": 4.6,
+        "count": 233
+      }
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S24",
+      "price": 999.99,
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-5g-sm-s921.jpg",
+      "reviews": {
+        "rating": 4.5,
+        "count": 198
+      }
+    },
+    {
+      "id": 3,
+      "name": "MacBook Air M3",
+      "price": 1299.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.WYO70-qjTbzgzpxDsk6LQwHaHa%3Fpid%3DApi&f=1&ipt=889443e3cfe5c23ce40c533772523dfdd3b5a006b2461af0c9cc550294f64451&ipo=images",
+      "reviews": {
+        "rating": 4.7,
+        "count": 321
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS 13",
+      "price": 1099.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.__FkNqed0N8hmbuISVPJYgHaHa%3Fpid%3DApi&f=1&ipt=518003c04a12c3d6ea6919e02ad31f6922978e89d215f37104488936537ac18a&ipo=images",
+      "reviews": {
+        "rating": 4.4,
+        "count": 150
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sony WH-1000XM5",
+      "price": 399.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.pQHQEb1ZDLu-M_9ZoYH31AHaLA%3Fpid%3DApi&f=1&ipt=5babfa7fce02df545863b3287d7017d9ac1f100c8c0fde6b29078a7f3ef603c6&ipo=images",
+      "reviews": {
+        "rating": 4.8,
+        "count": 412
+      }
+    },
+    {
+      "id": 6,
+      "name": "Apple Watch Series 9",
+      "price": 499.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.gVsJu__jZWbZuN_giVSkOgHaHa%3Fpid%3DApi&f=1&ipt=c756e32ecc135674f0784ec410ea8023cab643650a81ee7f7ab1bda54f8e3dc2&ipo=images",
+      "reviews": {
+        "rating": 4.5,
+        "count": 289
+      }
+    },
+    {
+      "id": 7,
+      "name": "iPad Pro 12.9",
+      "price": 1099.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.KtgSc0ayvOM1DZNidQB1ZAHaHa%3Fpid%3DApi&f=1&ipt=2e9d5164d254a758509491eabd1c472ef986279ba397a1b46e912f163061cd00&ipo=images",
+      "reviews": {
+        "rating": 4.7,
+        "count": 267
+      }
+    },
+    {
+      "id": 8,
+      "name": "Logitech MX Master 3S",
+      "price": 99.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.F7I2pjlZfzludY6k3NtBowHaHa%3Fpid%3DApi&f=1&ipt=0faa106acfb579726ad22824fb9ed43ae0695c12f58b806a08c267992c787343&ipo=images",
+      "category": "Accessories",
+      "reviews": {
+        "rating": 4.6,
+        "count": 145
+      }
+    },
+    {
+      "id": 9,
+      "name": "Mechanical Keyboard RGB",
+      "price": 149.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.AULSg_jrkN81kcYSTfzKJAHaF4%3Fpid%3DApi&f=1&ipt=00c4dd439b85f75a6f41f19a979e4b1adbe3e791cedc1a33bf45924296dfb4e4&ipo=images",
+      "reviews": {
+        "rating": 4.5,
+        "count": 190
+      }
+    },
+    {
+      "id": 10,
+      "name": "4K Monitor 27",
+      "price": 349.99,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.4RUTiHz5fjC3nk-N7-z84QHaFc%3Fpid%3DApi&f=1&ipt=a281ae794f505f51883ac7e4883143940bf9934601df4657948c6fac4ffdc5e0&ipo=images",
+      "reviews": {
+        "rating": 4.6,
+        "count": 223
+      }
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
