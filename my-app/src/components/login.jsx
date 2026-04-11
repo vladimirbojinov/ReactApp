@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "./footer";
-import '../styles/form.css';
+import style from '../styles/form.module.css';
+import styleBtn from '../styles/button.module.css';
 
 function Login() {
     const [username, setUsername] = useState();
@@ -49,8 +49,8 @@ function Login() {
     }
 
     return (
-        <div className="formPage">
-            <div className="container">
+        <div className={style.page}>
+            <div className={style.container}>
                 <h1>Login page</h1>
                 <form onSubmit={ProcessLogin}>
                     <div>
@@ -60,10 +60,10 @@ function Login() {
                         </div>
                         <label>Password*</label>
                         <div>
-                            <input value={password} onChange={e => setPassword(e.target.value.trim())} />
+                            <input type="password" value={password} onChange={e => setPassword(e.target.value.trim())} />
                         </div>
                     </div>
-                    <button className="btn btn-prime" type="submit">Login</button>
+                    <button className={`${styleBtn.btn} ${styleBtn.btnPrime}`}>Login</button>
                     <p>Don't have an account? <Link to="/register">Create an account</Link></p>
                 </form>
             </div>

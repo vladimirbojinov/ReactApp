@@ -1,23 +1,20 @@
 import { Link } from "react-router-dom";
-import Nav from "./nav";
-import Footer from "./footer";
-import '../styles/home.css';
-import '../styles/button.css';
+import style from '../styles/home.module.css';
+import styleBtn from '../styles/button.module.css';
+import { useEffect } from "react";
 
 function Home() {
     return (
-        <div className="home">
-            <Nav />
-
-            <section className="hero">
+        <div className={style.home}>
+            <section className={style.hero}>
                 <section>
                     <h1>Top DEALS</h1>
                     <p>Got money? Buy any tech you want.</p>
-                    <Link className="btn btn-prime" to="/products">Shop now</Link>
+                    <Link className={`${style.btn} ${styleBtn.btn} ${styleBtn.btnPrime}`} to="/products">Shop now</Link>
                 </section>
             </section>
 
-            <section className="advantage">
+            <section className={style.advantage}>
                 <div>
                     <p>Fast & Reliable Shipping</p>
                 </div>
@@ -29,8 +26,6 @@ function Home() {
                     <p>Customer Support</p>
                 </div>
             </section>
-
-            <Footer />
         </div>
     );
 }

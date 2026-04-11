@@ -1,0 +1,33 @@
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.container {
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.page input {
+    width: 90%;
+    padding: .7em;
+    margin: .5em 0;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+}
+
+.page a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.page button {
+    width: 100%;
+}

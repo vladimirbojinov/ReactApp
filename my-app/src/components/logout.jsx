@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
+import styleBtn from '../styles/button.module.css';
 
 function Logout() {
     if (localStorage.getItem('username') == null) {
         return (
             <div className="user-action">
-                <Link className="btn btn-second" to='/register'>Register</Link>
-                <Link className="btn btn-second" to='/login'>Login</Link>
+                <Link className={`${styleBtn.btn} ${styleBtn.btnSecond}`} to='/register'>Register</Link>
+                <Link className={`${styleBtn.btn} ${styleBtn.btnSecond}`} to='/login'>Login</Link>
             </div>
         );
     } else {
         return (
             <div className="user-action">
-                <button className="btn btn-second" onClick={() => { localStorage.clear(); window.location.reload() }}>Logout</button>
+                <button className={`${styleBtn.btn} ${styleBtn.btnSecond}`} onClick={() => { localStorage.clear(); window.location.reload() }}>Logout</button>
             </div>
         );
     }

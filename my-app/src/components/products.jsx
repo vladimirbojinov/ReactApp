@@ -1,16 +1,12 @@
-import Footer from "./footer";
-import Nav from "./nav";
 import RenderProduct from "./RenderProduct";
-import '../styles/products.css';
+import style from '../styles/products.module.css';
 
 function Products() {
     return (
-        <div className="products">
-            <Nav />
-            <h1>Products</h1>
+        <>
+            <h1 className={style.productHead}>Products</h1>
             <RenderProduct/>
-            <Footer />
-        </div>
+        </>
     );
 }
 

@@ -5,12 +5,13 @@
     padding: .5em 1em;
     text-decoration: none;
     border-radius: .5em;
+    cursor: pointer;
 }
 
-.btn-prime {
+.btnPrime {
     background-color: #2aada0;
 }
 
-.btn-second {
+.btnSecond {
     background-color: #F46036;
 }

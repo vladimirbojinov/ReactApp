@@ -1,24 +1,52 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './components/home'
-import Login from './components/login'
-import Register from './components/register'
-import Products from './components/products'
-import AboutMe from './components/aboutme'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/products' element={<Products />} />
-          <Route path='/aboutme' element={<AboutMe />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  )
+import { AppLayout } from "./components/layout";
+
+import Home from "./components/home";
+import Products from "./components/products";
+import AboutMe from "./components/aboutme";
+import Login from "./components/login";
+import Register from "./components/register";
+import ProductPage from "./components/productPage";
+import { ErrorPage } from "./components/errorPage";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppLayout />,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "/",
+                element: <Home />
+            },
+            {
+                path: "products",
+                element: <Products />
+            },
+            {
+                path: "products/:id",
+                element: <ProductPage />
+            },
+            {
+                path: "aboutme",
+                element: <AboutMe />
+            },
+            {
+                path: "login",
+                element: <Login />
+            },
+            {
+                path: "register",
+                element: <Register />
+            }
+
+        ]
+    }
+]);
+
+const App = () => {
+    return <RouterProvider router={router} />
 }
 
-export default App
+export default App;

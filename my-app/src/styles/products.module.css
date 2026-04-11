@@ -1,10 +1,10 @@
-.products h1 {
+.productHead {
     text-align: center;
 }
 
-.products-container {
+.productsContainer {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
     grid-auto-rows: 30%;
     justify-content: center;
     gap: 1.5em;
@@ -43,5 +43,13 @@
     p:nth-child(4) {
         font-weight: 400;
         color: #888;
+    }
+
+    a {
+        border: none;
+    }
+
+    a button {
+        width: 100%;
     }
 }

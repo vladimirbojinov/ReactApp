@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "./footer";
-import '../styles/form.css';
-import '../styles/button.css';
+import style from '../styles/form.module.css';
+import styleBtn from '../styles/button.module.css';
 
 function Register() {
     const [id, setId] = useState();
@@ -63,8 +62,8 @@ function Register() {
     }
 
     return (
-        <div className="formPage">
-            <div className="container">
+        <div className={style.page}>
+            <div className={style.container}>
                 <h1>Register</h1>
                 <form onSubmit={HandleSubmit}>
                     <div>
@@ -74,10 +73,10 @@ function Register() {
                         </div>
                         <label>Password*</label>
                         <div>
-                            <input value={password} onChange={e => setPassword(e.target.value.trim())} />
+                            <input type="password" value={password} onChange={e => setPassword(e.target.value.trim())} />
                         </div>
                     </div>
-                    <button className="btn btn-prime" type="submit">Register</button>
+                    <button className={`${styleBtn.btn} ${styleBtn.btnPrime}`} type="submit">Register</button>
                     <p>Already have an account? <Link to="/login">Login</Link></p>
                 </form>
             </div>
