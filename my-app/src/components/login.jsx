@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "./footer";
+import '../styles/form.css';
 
 function Login() {
     const [username, setUsername] = useState();
@@ -47,18 +49,24 @@ function Login() {
     }
 
     return (
-        <div>
-            <h1>Login page</h1>
-            <form onSubmit={ProcessLogin}>
-                <div>
-                    <label>Username*</label>
-                    <input value={username} onChange={e => setUsername(e.target.value.trim())} />
-                    <label>Password*</label>
-                    <input value={password} onChange={e => setPassword(e.target.value.trim())} />
-                </div>
-                <button type="submit">Login</button>
-                <Link to="/register">Don't have account?</Link>
-            </form>
+        <div className="formPage">
+            <div className="container">
+                <h1>Login page</h1>
+                <form onSubmit={ProcessLogin}>
+                    <div>
+                        <label>Username*</label>
+                        <div>
+                            <input value={username} onChange={e => setUsername(e.target.value.trim())} />
+                        </div>
+                        <label>Password*</label>
+                        <div>
+                            <input value={password} onChange={e => setPassword(e.target.value.trim())} />
+                        </div>
+                    </div>
+                    <button className="btn btn-prime" type="submit">Login</button>
+                    <p>Don't have an account? <Link to="/register">Create an account</Link></p>
+                </form>
+            </div>
         </div>
     );
 }

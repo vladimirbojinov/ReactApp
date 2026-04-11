@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    height: 70vh;
+    background-image:
+        linear-gradient(90deg, #6C6C6C 10%, rgba(237, 221, 83, 0) 100%),
+        url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Ftech-gadgets-devices-white-background_194294-745.jpg&f=1&nofb=1&ipt=47c7c0f81352cd0b573b24478e10758b5a6c925efcb59ac91c59f599c609742b');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    section {
+        position: relative;
+        padding: 0 4em;
+        top: 30%;
+    }
+
+    section h1, p {
+        margin: 0;
+    }
+
+    section h1 {
+        font-size: 5em;
+    }
+
+    section .btn {
+        margin-top: 1em;
+        text-align: center;
+        width: 5em;
+    }
+}
+
+.advantage {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9C74F;
+    font-size: 1.5em;
+
+    div {
+        align-content: center;
+    }
+
+    div:nth-child(3) {
+        text-align: center;
+        p {
+            margin: 0;
+        }
+    }
+}

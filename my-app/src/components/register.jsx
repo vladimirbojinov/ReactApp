@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Footer from "./footer";
+import '../styles/form.css';
+import '../styles/button.css';
 
 function Register() {
     const [id, setId] = useState();
@@ -60,18 +63,24 @@ function Register() {
     }
 
     return (
-        <div>
-            <h1>Register</h1>
-            <form onSubmit={HandleSubmit}>
-                <div>
-                    <label>Username*</label>
-                    <input value={username} onChange={e => setUsername(e.target.value.trim())} />
-                    <label>Password*</label>
-                    <input value={password} onChange={e => setPassword(e.target.value.trim())} />
-                </div>
-                <button type="submit">Register</button>
-                <Link to="/login">Have an account?</Link>
-            </form>
+        <div className="formPage">
+            <div className="container">
+                <h1>Register</h1>
+                <form onSubmit={HandleSubmit}>
+                    <div>
+                        <label>Username*</label>
+                        <div>
+                            <input value={username} onChange={e => setUsername(e.target.value.trim())} />
+                        </div>
+                        <label>Password*</label>
+                        <div>
+                            <input value={password} onChange={e => setPassword(e.target.value.trim())} />
+                        </div>
+                    </div>
+                    <button className="btn btn-prime" type="submit">Register</button>
+                    <p>Already have an account? <Link to="/login">Login</Link></p>
+                </form>
+            </div>
         </div>
     );
 }

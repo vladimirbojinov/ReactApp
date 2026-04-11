@@ -1,19 +1,23 @@
 import { Link } from "react-router-dom";
 import Nav from "./nav";
 import Footer from "./footer";
+import '../styles/home.css';
+import '../styles/button.css';
 
 function Home() {
     return (
-        <div>
+        <div className="home">
             <Nav />
 
-            <section>
-                <h1>Top DEALS</h1>
-                <p>Have money? Buy anything you want.</p>
-                <Link>Shop now</Link>
+            <section className="hero">
+                <section>
+                    <h1>Top DEALS</h1>
+                    <p>Got money? Buy any tech you want.</p>
+                    <Link className="btn btn-prime" to="/products">Shop now</Link>
+                </section>
             </section>
 
-            <section>
+            <section className="advantage">
                 <div>
                     <p>Fast & Reliable Shipping</p>
                 </div>

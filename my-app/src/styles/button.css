@@ -1,0 +1,16 @@
+.btn {
+    display: block;
+    border: .1em solid #2B2B2B;
+    color: #2B2B2B;
+    padding: .5em 1em;
+    text-decoration: none;
+    border-radius: .5em;
+}
+
+.btn-prime {
+    background-color: #2aada0;
+}
+
+.btn-second {
+    background-color: #F46036;
+}

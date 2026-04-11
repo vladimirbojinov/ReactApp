@@ -11,13 +11,15 @@ function RenderProduct() {
     }, []);
 
     return (
-        <div className="posts-container">
+        <div className="products-container">
             {products.map((p) => {
                 return (
                     <div key={p.id} className="card">
-                        <img src={p.image} />
+                        <div>
+                            <img src={p.image} />
+                        </div>
                         <p>{p.name}</p>
-                        <p>{p.reviews.rating} ({p.reviews.count} reviews)</p>
+                        <p>{p.reviews.rating}⭐ ({p.reviews.count} reviews)</p>
                         <p>{p.price}&euro;</p>
                     </div>
                 );

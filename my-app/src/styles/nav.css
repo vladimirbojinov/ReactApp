@@ -1,0 +1,25 @@
+nav {
+    padding: 1em;
+    background-color: #D72638;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    align-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2B2B2B;
+    padding: 0 .5em;
+}
+
+nav .user-action {
+    display: flex;
+}
+
+nav .user-action a {
+    display: block;
+    margin: 0 .5em;
+}

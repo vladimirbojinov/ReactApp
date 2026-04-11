@@ -1,17 +1,14 @@
 import Footer from "./footer";
 import Nav from "./nav";
 import RenderProduct from "./RenderProduct";
+import '../styles/products.css';
 
 function Products() {
     return (
-        <div>
+        <div className="products">
             <Nav />
-
-            <section>
-                <h1>Products</h1>
-                <RenderProduct/>
-            </section>
-
+            <h1>Products</h1>
+            <RenderProduct/>
             <Footer />
         </div>
     );
